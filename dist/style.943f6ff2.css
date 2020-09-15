@@ -1,2 +1,0 @@
-body{display:flex;flex-direction:column}img{height:auto;width:400px;padding:15px}tr{height:50px}td.details-control:after{content:"\25b6";cursor:pointer}tr.shown td.details-control:after{content:"\25bc";cursor:pointer}.container{width:90%;margin:auto}.extra-table td:nth-child(odd){width:150px;font-weight:700}
-/*# sourceMappingURL=/style.943f6ff2.css.map */
