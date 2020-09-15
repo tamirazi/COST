@@ -7,9 +7,6 @@ img {
   width: 400px;
   padding: 15px;
 }
-tr {
-  height: 50px;
-}
 
 td.details-control:after {
   content: "\25b6";
@@ -21,7 +18,7 @@ tr.shown td.details-control:after {
 }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
