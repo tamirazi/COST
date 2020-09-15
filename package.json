@@ -1,0 +1,26 @@
+{
+  "name": "cost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamirazi/COST.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamirazi/COST/issues"
+  },
+  "homepage": "https://github.com/tamirazi/COST#readme",
+  "dependencies": {
+    "datatables.net": "^1.10.21",
+    "datatables.net-dt": "^1.10.21",
+    "jquery": "^3.5.1",
+    "papaparse": "^5.3.0"
+  }
+}
