@@ -22,6 +22,10 @@ tr.shown td.details-control:after {
   margin: auto;
 }
 
+.abstract {
+  white-space: pre-line;
+}
+
 .extra-table td:nth-child(odd) {
   width: 150px;
   font-weight: bold;

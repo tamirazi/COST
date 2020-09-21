@@ -50,12 +50,13 @@ module.exports.makeDataTable = (data) => {
 function format(d) {
   // `d` is the original data object for the row
   return (
-    `<p>` +
+    `<h3 class="abstract"><u>${d["Title"]}</u></h3>` +
+    `<p class="abstract">` +
     `<strong>Abstract: </strong><br>` +
     d["Abstract Note"] +
     `</p>` +
     `
-    <table class="extra-table" style="width: 100%;" >
+    <table class="extra-table ui fixed single line selectable table" style="width: 100%;" >
     <tbody>
     <tr>
     <td>Article type</td>
