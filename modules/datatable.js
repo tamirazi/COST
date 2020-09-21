@@ -1,5 +1,5 @@
-require("datatables.net")();
 const $ = require("jquery");
+require("datatables.net-se")();
 
 const dtOptions = {
   autoWidth: false,
@@ -7,7 +7,7 @@ const dtOptions = {
     caseInsensitive: false,
   },
   columnDefs: [
-    { width: "2%", targets: 0 },
+    { width: "5%", targets: 0 },
     { width: "5%", targets: 1 },
     { width: "45%", targets: 2 },
     { width: "30%", targets: 3 },
