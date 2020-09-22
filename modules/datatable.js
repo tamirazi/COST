@@ -29,7 +29,11 @@ const dtOptions = {
 };
 
 module.exports.makeDataTable = (data) => {
-  const table = $("#dataset").DataTable({ data: data, ...dtOptions });
+  const table = $("#dataset").DataTable({
+    searchHighlight: true,
+    data: data,
+    ...dtOptions,
+  });
   $("#dataset tbody").on("click", "td.details-control", function () {
     var tr = $(this).closest("tr");
     var row = table.row(tr);

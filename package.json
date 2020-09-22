@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/tamirazi/COST#readme",
   "dependencies": {
-    "datatables.net": "^1.10.21",
-    "datatables.net-dt": "^1.10.21",
     "datatables.net-se": "^1.10.22",
     "jquery": "^3.5.1",
     "papaparse": "^5.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "mark.js": "github:julmot/mark.js"
+  }
 }
