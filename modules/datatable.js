@@ -3,9 +3,6 @@ require("datatables.net-se")();
 
 const dtOptions = {
   autoWidth: false,
-  search: {
-    caseInsensitive: false,
-  },
   columnDefs: [
     { width: "5%", targets: 0 },
     { width: "5%", targets: 1 },
@@ -29,10 +26,22 @@ const dtOptions = {
 };
 
 module.exports.makeDataTable = (data) => {
+  $("#dataset tfoot th").each(function () {
+    var title = $("#dataset thead th").eq($(this).index()).text();
+    $(this).html('<input type="text" placeholder="' + title + '" />');
+  });
   const table = $("#dataset").DataTable({
     searchHighlight: true,
     data: data,
     ...dtOptions,
+  });
+  // Apply the search
+  table.columns().every(function () {
+    var that = this;
+
+    $("input", this.footer()).on("keyup change", function () {
+      that.search(this.value).draw();
+    });
   });
   $("#dataset tbody").on("click", "td.details-control", function () {
     var tr = $(this).closest("tr");
@@ -50,7 +59,6 @@ module.exports.makeDataTable = (data) => {
   });
 };
 
-/* Formatting function for row details - modify as you need */
 function format(d) {
   // `d` is the original data object for the row
   return (

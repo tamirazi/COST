@@ -16,6 +16,35 @@ tr.shown td.details-control:after {
   content: "\25bc";
   cursor: pointer;
 }
+#dataset > tfoot > tr > th.details-control > input[type="text"] {
+  visibility: hidden;
+}
+
+tfoot input {
+  width: 70%;
+  -webkit-box-direction: normal;
+  box-sizing: inherit;
+  overflow: visible;
+  outline-offset: -2px;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  vertical-align: top;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin: 0;
+  outline: 0;
+  line-height: 1.21428571em;
+  padding: 5px 5px;
+  font-size: 1em;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  box-shadow: 0 0 0 0 transparent inset;
+  transition: color 0.1s ease, border-color 0.1s ease;
+}
 
 .container {
   width: 95%;
