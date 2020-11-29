@@ -26,6 +26,7 @@
     "papaparse": "^5.3.0"
   },
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "mark.js": "github:julmot/mark.js"
   }
 }
